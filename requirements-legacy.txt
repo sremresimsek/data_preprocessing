@@ -1,0 +1,7 @@
+numpy<2
+pandas<3
+scikit-learn
+seaborn
+missingno
+ycimpute
+jupyter

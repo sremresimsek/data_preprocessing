@@ -1,41 +1,23 @@
-# Data Pre-processing & Feature Engineering Repository
+# Data Preprocessing & Feature Engineering
 
-This repository contains comprehensive **data pre-processing** and **feature engineering** studies implemented in various data science projects. The primary goal is to transform raw data into a clean, optimized, and meaningful format for machine learning models.
+Course-based exercises and exploratory notebooks covering tabular data preparation in Python. These are study materials, not production pipelines or independently designed projects.
 
-Current focus: **Google Play Store Dataset** analysis and processing.
+| Notebook | Focus |
+| --- | --- |
+| `missing_data_visualization.ipynb` | Missing-value visualization |
+| `missing_data_quick_solution.ipynb` | Mean, median and other imputation examples |
+| `estimated_value_assignment.ipynb` | Legacy KNN and EM imputation exercises |
+| `outliers.ipynb` | IQR and Local Outlier Factor |
+| `data_standardization.ipynb` | Scaling and normalization examples |
+| `variable_transformations.ipynb` | Categorical transformations |
+| `value_assignment_for_categorical_variables.ipynb` | Categorical imputation |
+| `value_assignment_in_categorical_variable_breakdown.ipynb` | Group-based imputation |
+| `eda&feature_engineering/` | Google Play Store cleaning and exploratory analysis |
 
----
+## Run locally
 
-## 📁 Project Structure & Content
+Create a virtual environment, install `python -m pip install -r requirements.txt`, then open Jupyter with `python -m jupyter notebook`. Run the notebooks from their own folders. For the legacy `ycimpute` exercise, use a separate compatible environment (Python 3.11 suggested) and `requirements-legacy.txt`; dependency compatibility has not been tested.
 
-The notebooks in this project represent different stages of the data cleaning and preparation pipeline:
+## Data and limitations
 
-* **`missing_data_visualization.ipynb`**: Visualizing the density and distribution of null values.
-* **`missing_data_quick_solution.ipynb`**: Fast imputation strategies (mean/median/mode) for missing values.
-* **`estimated_value_assignment.ipynb`**: Model-based (predictive) imputation techniques for missing data.
-* **`outliers.ipynb`**: Detection (IQR, Z-score) and handling (capping/removal) of outliers.
-* **`data_standardization.ipynb`**: Feature scaling methods including StandardScaler, RobustScaler, and MinMaxScaler.
-* **`variable_transformations.ipynb`**: Logarithmic transformations and normalization of data distributions.
-* **`value_assignment_for_categorical_variables.ipynb`**: Label Encoding and One-Hot Encoding for categorical data.
-* **`eda&feature_engineering/`**: Dataset-specific Exploratory Data Analysis and feature extraction.
-
----
-
-## 🛠️ Techniques Applied
-
-From a data scientist's perspective, the following standard operations are implemented:
-
-1. **Missing Value Analysis:** Randomness analysis of null values and selection of appropriate imputation methods.
-2. **Outlier Management:** Visual detection via Boxplots and Scatter plots; thresholding using the Interquartile Range (IQR) method.
-3. **Feature Scaling:** Normalizing numerical data to improve model performance and convergence.
-4. **Categorical Encoding:** Converting nominal and ordinal data into numerical formats compatible with machine learning algorithms.
-
----
-
-## 🚀 Tech Stack
-
-* **Language:** Python 3.x
-* **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-* **Environment:** Jupyter Notebook (.ipynb)
-
----
+See [DATA_SOURCES.md](DATA_SOURCES.md). Edited notebooks have cleared outputs and need to be rerun. The original course exercises are preserved except for targeted corrections. The dependency files are not verified lockfiles; no execution or production validation is claimed.
